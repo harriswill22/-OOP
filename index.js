@@ -17,7 +17,7 @@ function Circle(radius) {
     this.draw = function () {
     this.getDefaultLocation = function () { 
         return defaultLocation
-     }
+    }
         console.log('draw');
     };
     Object.defineProperty(this, 'defaultLocation', {

@@ -1,34 +1,58 @@
 // Factory Function
-function createCircle(radius) {
-    return {
-        radius,
-        draw: function () {
-            console.log('draw');
-        }
-    };
-}
+// function createCircle(radius) {
+//     return {
+//         radius,
+//         draw: function () {
+//             console.log('draw');
+//         }
+//     };
+// }
 
-const circle = createCircle(17);
+// const circle = createCircle(17);
 
 // Constructor Function 
 function Circle(radius) {
     this.radius = radius
-    this.draw = function () {
-        console.log('draw');
+    let defaultLocation = {x: 0, y:0};
+    let computeOptimumLocation = function (factor) { 
+
     }
-}
-const another = new Circle(10);
+    this.draw = function () {
 
-for (let key in circle) {
-    if(typeof circle[key !== 'function'])
-    console.log(key,circle[key]);
+    computeOptimumLocation(0.1);
+    // default location
+    // this.radius
+        console.log('draw');
+    };
+}
+const circle = new Circle(10);
+
+circle.draw();
+circle.
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Enumerating Properties
+// for (let key in circle) {
+//     if(typeof circle[key !== 'function'])
+//     console.log(key,circle[key]);
     
-}
-const keys = Object.keys(circle)
-console.log(keys);
+// }
+// const keys = Object.keys(circle)
+// console.log(keys);
 
-if ('radius' in circle)
-console.log('Circle has a radius');
+// if ('radius' in circle)
+// console.log('Circle has a radius');
 
 
 

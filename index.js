@@ -8,7 +8,7 @@ function createCircle(radius) {
     };
 }
 
-const circle = createCircle(1);
+const circle = createCircle(17);
 
 // Constructor Function 
 function Circle(radius) {
@@ -19,10 +19,26 @@ function Circle(radius) {
 }
 const another = new Circle(10);
 
-circle.propertyName = 'center location'
-circle.location = {x: 1}
+for (let key in circle) {
+    if(typeof circle[key !== 'function'])
+    console.log(key,circle[key]);
+    
+}
+const keys = Object.keys(circle)
+console.log(keys);
 
-delete circle.location;
+if ('radius' in circle)
+console.log('Circle has a radius');
+
+
+
+
+
+// Adding and removing Properties
+// circle.propertyName = 'center location'
+// circle.location = {x: 1}
+
+// delete circle.[location];
 
 
 

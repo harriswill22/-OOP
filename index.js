@@ -17,7 +17,17 @@ function Circle(radius) {
         console.log('draw');
     }
 }
-const another = new Circle(1);
+const another = new Circle(10);
+
+circle.propertyName = 'center location'
+circle.location = {x: 1}
+
+delete circle.location;
+
+
+
+
+
 
 
 // Value vs Reference 
@@ -34,9 +44,9 @@ const another = new Circle(1);
 
 // x.value = 20;
 
-let obj = {value:10};
-function increase (obj) { 
-    obj.value++;
-}
-increase(obj);
-console.log(obj);
+// let obj = {value:10};
+// function increase (obj) { 
+//     obj.value++;
+// }
+// increase(obj);
+// console.log(obj);
